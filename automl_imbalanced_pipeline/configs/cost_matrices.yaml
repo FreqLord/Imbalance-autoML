@@ -1,0 +1,17 @@
+# Business costs for closed-form threshold optimization
+# c_FP: Cost of False Positive
+# c_FN: Cost of False Negative
+# c_TP: Benefit/cost of True Positive (usually negative cost or 0)
+# c_TN: Benefit/cost of True Negative (typically 0)
+
+default:
+  c_fp: 1.0
+  c_fn: 10.0
+  c_tp: 0.0
+  c_tn: 0.0
+
+fraud_detection:
+  c_fp: 5.0
+  c_fn: 100.0
+  c_tp: -10.0
+  c_tn: 0.0

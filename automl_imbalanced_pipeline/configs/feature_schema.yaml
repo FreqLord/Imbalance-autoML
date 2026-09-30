@@ -1,0 +1,11 @@
+# Feature schema specification
+# Define group keys, temporal/timestamp columns, and feature types
+
+group_column: null          # e.g., 'customer_id' for Group-aware splitting
+time_column: null           # e.g., 'transaction_timestamp' for Rolling-Origin Forward Split
+label_column: "target"
+
+categorical_features: []
+continuous_features: []
+high_cardinality_features: []
+embargo_horizon_days: 0     # Delay gap for label arrival in temporal splitting

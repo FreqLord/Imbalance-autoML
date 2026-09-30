@@ -1,0 +1,22 @@
+# Complexity proxy: Dummy < Logistic < RF < GBMs
+# Used for 1-SE rule and complexity penalization in model selection
+
+hierarchy:
+  - name: dummy
+    complexity_rank: 0
+    tier_eligibility: [1, 2, 3]
+  - name: logistic_regression
+    complexity_rank: 1
+    tier_eligibility: [1, 2, 3]
+  - name: random_forest
+    complexity_rank: 2
+    tier_eligibility: [2, 3]
+  - name: lightgbm
+    complexity_rank: 3
+    tier_eligibility: [3]
+  - name: catboost
+    complexity_rank: 3
+    tier_eligibility: [3]
+  - name: xgboost
+    complexity_rank: 3
+    tier_eligibility: [3]
